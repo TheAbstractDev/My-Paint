@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta name="description" content="paint-like en javascript" />
+  <title>My Paint</title>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,400italic' rel='stylesheet' type='text/css'>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+
+</head>
+<body>
+
+<canvas id="work" width="800" height="600" style="border: 1px solid black"></canvas>
+
+<input type="color" id="cp" />
+
+<button id="crayon"><i class="fa fa-pencil"></i></button>
+<button id="line"><i class="fa fa-minus"></i></button>
+<button id="rect"><i class="fa fa-square-o"></i></button>
+<button id="rectPlein"><i class="fa fa-square"></i></button>
+<button id="circle">O</button>
+<button id="circlePlein"><i class="fa fa-circle"></i></button>
+<button id="gomme"><i class="fa fa-eraser"></i></button>
+<button id="clear"><i class="fa fa-times"></i></button> <br>
+
+<p>Epaisseur</p>
+ <span> 0 </span> <input id="range" type="range" value="3" name="points" min="0" max="100"> <span> 100 </span> <br> <br>
+
+<span>Texte:</span> <input type="text" id="txt" placeholder="Texte" />
+
+<span>Police:</span>
+
+<select id="font">
+  <option value="Arial">Arial</option>
+  <option value="Open Sans">Open Sans</option>
+  <option value="Roboto">Roboto</option>
+</select>
+
+<span>Taille:</span>
+
+<select id="size">
+  <option value="10">10px</option>
+  <option value="20">20px</option>
+  <option value="30">30px</option>
+  <option value="40">40px</option>
+</select>
+
+<button id="appearText">Done</button>
+
+<input type="hidden" name="MAX_FILE_SIZE" value="100000" />      
+<input type="file" id="img" />
+<img src=".." id="imgTag" alt="img" />
+<button id="validateImg">Inserer</button>
+
+<a id="dll" download="canvas.png" href="#" title="Telecharger le canvas" >Telecharger</a>
+
+
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+ <script type="text/javascript" src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+body {
+  margin: 0;
+  padding: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #cccccc;
+}
+#work {
+  display: block;
+  margin: auto;
+  margin-top: 90px;
+  background-color: #ffffff;
+}
+p {
+  font-family: Open sans;
+  font-weight: 200;
+  width: 120px;
+  text-align: center;
+}
+span {
+  font-family: Open sans;
+  font-weight: 400;
+}
